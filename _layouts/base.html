@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="icon" href="{{ site.favicon }}">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  
+  <!-- Dark theme -->
+  {% if site.minima.skin == 'dark' %}
+  <link rel="stylesheet" href="{{ '/assets/dark.css' | relative_url }}">
+  {% endif %}
+  
+</head>
+<body>
+  coooooool - Ars-j3kyll
+  <!-- Header -->
+  {% include header.html %}
+  
+  <!-- Main content -->
+  <main class="content">
+    {{ content }}
+  </main>
+  
+  <!-- Footer -->
+  {% include footer.html %}
+  
+  <!-- Scripts -->
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
+  
+</body>
+</html>
