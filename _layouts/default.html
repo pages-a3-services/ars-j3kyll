@@ -15,21 +15,12 @@
   {% endif %}
 </head>
 <body>
-
-  <!-- Header -->
   {% include header.html %}
-
-  <!-- Main content -->
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
-
-  <!-- Footer -->
+  {% include content.html %}
   {% include footer.html %}
 
-  <!-- Scripts -->
+  <!-- Scripts 
   <script src="{{ '/assets/main.js' | relative_url }}"></script>
+  -->
 </body>
 </html>
