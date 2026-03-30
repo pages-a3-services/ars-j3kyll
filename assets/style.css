@@ -81,3 +81,8 @@ pre, code {
 
 /* Dark theme specifics */
 body.dark-mode { background-color: #181818; color:#ccc; }
+
+.page-content {
+    padding: 30px 0;
+    flex: 1 0 auto;
+}
