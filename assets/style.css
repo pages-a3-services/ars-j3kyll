@@ -1,0 +1,83 @@
+/* Highlighting */
+.highlight .err { color:#e3d2d2; background-color:#8c2121; }
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp { color:#8a8a8a; }
+.highlight .cs { color:#8a8a8a; font-style:italic; }
+.highlight .gd { color:#d85a5a; }
+.highlight .gi { color:#4ec64e; }
+.highlight .go { color:#888; }
+.highlight .gr { color:#f07178; }
+.highlight .k { color:#d85a7b; }
+.highlight .kt { color:#ffcb6b; }
+.highlight .n { color:#c7d1d8; }
+.highlight .na, .highlight .nc, .highlight .ni, .highlight .nn { color:#11a69f; }
+.highlight .nf { color:#5ab780; }
+.highlight .no, .highlight .m { color:#9d99e6; }
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, 
+.highlight .sh, .highlight .si, .highlight .sx { color:#baa94a; }
+.highlight .sr { color:#009926; }
+.highlight .ss { color:#3c90f5; }
+.highlight .w { color:#eff; }
+.highlight .lineno, .highlight .gl { color:#8a8a8a; }
+.highlight .hll { background-color:#373730; }
+
+/* Body */
+body {
+    font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", 
+           "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, 
+           Helvetica, Arial, sans-serif;
+    color: #959595;
+    background-color: #181818;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    -webkit-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/* Headers */
+h1,h2,h3,h4,h5,h6 { color:#bbb; font-weight:500; margin-bottom:15px; }
+
+/* Links */
+a { color:#5691cd; text-decoration:none; }
+a:visited { color:#80bbff; }
+a:hover { color:#959595; text-decoration:underline #999; text-underline-offset:3px; }
+
+/* Layout helpers */
+.wrapper { max-width:800px; margin:0 auto; padding:0 30px; }
+.wrapper:after { content:""; display:table; clear:both; }
+
+/* Tables */
+table {
+    width:100%;
+    border-collapse:collapse;
+    color:#959595;
+    border:1px solid #2b2b2b;
+}
+table th, table td { padding:10px 15px; border:1px solid #2b2b2b; }
+table th { background-color:#323232; border:1px solid #3e3e3e; }
+table tr:nth-child(even) { background-color:#222; }
+
+/* Code blocks */
+pre, code {
+    font-family:"Menlo","Inconsolata","Consolas","Roboto Mono","Ubuntu Mono","Liberation Mono","Courier New",monospace;
+    background-color:#222;
+    color:#bbb;
+    padding:8px 12px;
+    font-size:15px;
+    line-height:1.4;
+    overflow-x:auto;
+    border-radius:3px;
+}
+
+/* Footer */
+.site-footer { border-top:1px solid #2b2b2b; padding:30px 0; color:#858585; }
+.footer-col-wrapper { display:flex; flex-wrap:wrap; }
+
+/* Header */
+.site-header { background-color:#181818; border-top:5px solid #999; border-bottom:1px solid #2b2b2b; }
+.site-title { color:#a6a6a6; font-size:1.625rem; font-weight:300; letter-spacing:-1px; }
+
+/* Dark theme specifics */
+body.dark-mode { background-color: #181818; color:#ccc; }
